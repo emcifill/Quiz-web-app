@@ -1,9 +1,12 @@
 $(document).ready(function() {
-$("#question").click(function(){
-  $("#question").fadeOut();
-  $("#answer").fadeIn();
-});
-$("#answer").hide();
+	
+ $("#btn1").click(function(){
+	  $("p").append(" <h1>Answer</h1>.");
+	 $("#question").remove();
+	   
+   
+  });
+
 
 
  
