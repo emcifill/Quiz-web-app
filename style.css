@@ -1,9 +1,13 @@
+body {
+  background-color: lightblue;
+}
+
 * {
 	text-align: center;
 	
 }
 
-h1 {
+#test {
 	
 	padding-top: 100px;
 		 background: LightGray;
@@ -13,3 +17,10 @@ h1 {
   outline: 5px solid Gray;
 	
 }
+
+#title {
+	
+	font-size: 100px;
+	
+}
+
