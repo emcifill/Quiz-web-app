@@ -21,10 +21,22 @@ $(document).ready(function () {
 	textArray[18] = 'Q.10: What is freedom of religion?';    
     textArray[19] = 'A.10: You can practice any religion, or not practice a religion.';
 	
+	
+	
 	var idx = 0;
     $('input#click').on('click', function(){
         idx++;
         var newidx = idx % textArray.length;
         $('h1#test').slideUp(100).slideDown(100).text(textArray[newidx]);
     });
+	
+	
+	      $('#click').on('click', function() {
+            var currentText = $('#click').val();
+            if (currentText === 'Reveal') {
+                $('#click').val(' Next ');
+            } else {
+                $('#click').val('Reveal');
+            }
+        });
 });
